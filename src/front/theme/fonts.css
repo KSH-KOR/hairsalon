@@ -1,0 +1,22 @@
+h1 {
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+h1.big-font, .type-wrap.big-font {
+    font-family: "Montserrat";
+    font-size: 60px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #fff!important;
+    margin: 0;
+    line-height: 60px;
+}
+
+@media only screen and (max-width: 767px){
+    h1.big-font {
+        font-size: 32px;
+    }
+}
