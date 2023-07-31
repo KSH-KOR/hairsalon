@@ -26,7 +26,9 @@ const AdminNoticeListPage = () => {
   // 모든 게시글 불러오기 API 호출
   const fetchNotices = async () => {
     try {
-      const response = await axios.get(apiUrl + 'notices');
+      const response = await axios.get(apiUrl + 'notices', {
+        headers: { Authorization: localStorage.getItem('token') },
+      });
       setNotices(response.data);
     } catch (error) {
       console.error('Error fetching notices:', error);
@@ -129,7 +131,7 @@ const AdminNoticeListPage = () => {
                 className="form-control me-2"
                 placeholder="검색어를 입력하세요"
                 value={searchQuery}
-                style={{maxWidth: "600px"}}
+                style={{ maxWidth: "600px" }}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
@@ -171,7 +173,7 @@ const AdminNoticeListPage = () => {
                 <button
                   key={option}
                   className={`btn btn-${dateRangeType === option ? 'primary' : 'white'} btn-fixed-width me-1`}
-                  style={{border: '1px solid #E8E8E8', borderRadius: '5px', width: '80px'}}
+                  style={{ border: '1px solid #E8E8E8', borderRadius: '5px', width: '80px' }}
                   onClick={() => setDateRangeType(option)}
                 >
                   {option}

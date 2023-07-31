@@ -68,7 +68,7 @@ const HairServiceBookingForm = () => {
     };
 
     // Make the HTTP POST request to the backend API
-    axios.post('/api/bookings/add', bookingData)
+    axios.post('http://localhost:8080/api/bookings/add', bookingData)
       .then((response) => {
         // Handle the response from the backend if needed
         console.log(response.data);
