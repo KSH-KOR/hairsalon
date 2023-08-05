@@ -68,7 +68,8 @@ const HairServiceBookingForm = () => {
     };
 
     // Make the HTTP POST request to the backend API
-    axios.post('http://localhost:8080/api/bookings/add', bookingData)
+    // cors domain issue!! 
+    axios.post('http://10.41.14.177:8080/api/bookings/add', bookingData)
       .then((response) => {
         // Handle the response from the backend if needed
         console.log(response.data);
