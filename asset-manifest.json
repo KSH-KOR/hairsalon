@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.51e42511.css",
+    "main.js": "/static/js/main.4d9bf16b.js",
+    "static/js/787.c40dfc31.chunk.js": "/static/js/787.c40dfc31.chunk.js",
+    "static/media/bg_64.mp4": "/static/media/bg_64.0eb7e15104fe119300f4.mp4",
+    "static/media/bg_64.jpg": "/static/media/bg_64.adfd6552d412b6a5dd92.jpg",
+    "static/media/logo_ginger_and_maude.png": "/static/media/logo_ginger_and_maude.fc5ffb4d6b88afd087c6.png",
+    "index.html": "/index.html",
+    "main.51e42511.css.map": "/static/css/main.51e42511.css.map",
+    "main.4d9bf16b.js.map": "/static/js/main.4d9bf16b.js.map",
+    "787.c40dfc31.chunk.js.map": "/static/js/787.c40dfc31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51e42511.css",
+    "static/js/main.4d9bf16b.js"
+  ]
+}
